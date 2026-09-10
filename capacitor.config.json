@@ -1,0 +1,11 @@
+{
+  "appId": "com.sidralabs.app",
+  "appName": "Sidra Labs",
+  "webDir": ".",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}

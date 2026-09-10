@@ -1,40 +1,29 @@
-# Sidra Labs - Progressive Web App (PWA)
+# Sidra Labs - Android APK (Capacitor)
 
-نسخة جاهزة من موقع معامل سيدرا للتحاليل الطبية، محولة إلى **Static + PWA** عشان تشتغل على GitHub Pages وتتثبت كأبلكيشن على الموبايل.
+تحويل موقع معامل سيدرا للتحاليل الطبية إلى تطبيق أندرويد حقيقي (WebView) باستخدام Capacitor.
 
-## الملفات
-- `index.html` → الصفحة الرئيسية (ثابتة)
-- `manifest.json` → إعدادات الـ PWA
-- `sw.js` → Service Worker للـ offline
-- `offers/` → صور العروض
-- `logo.png` / `cover.jpg` / `iso.png`
+**بدون PWA** – التطبيق يعمل كتطبيق أندرويد عادي.
 
-## طريقة الرفع على GitHub Pages
+## الملفات المهمة
+- `index.html` + الصور + `offers/`
+- `capacitor.config.json`
+- `package.json`
+- `.github/workflows/build-apk.yml` → يبني الـ APK تلقائياً
 
-1. اعمل Repository جديد على GitHub (مثلاً `sidralabs` أو `sidralabs.github.io`)
-2. ارفع كل محتويات الفولدر ده (مش الفولدر نفسه)
-3. روح لـ **Settings → Pages**
-4. اختار Source: **Deploy from a branch** → Branch: `main` → Folder: `/ (root)`
-5. بعد دقايق الموقع هيشتغل على:
-   - `https://USERNAME.github.io/REPO_NAME/`
-   أو لو عملت `USERNAME.github.io` هيشتغل على الدومين الرئيسي
+## طريقة الحصول على الـ APK
 
-## تثبيت كأبلكيشن (PWA)
+### الطريقة الأسهل (موصى بها):
+1. ارفع فولدر `offers/` كامل على الريبو (لو مش موجود).
+2. روح على تبويب **Actions** في الريبو.
+3. اختار workflow اسمه **Build Android APK**.
+4. اضغط **Run workflow** → Run.
+5. استنى 3-6 دقايق.
+6. بعد ما يخلص، هتلاقي **Artifacts** تحت → حمل ملف `sidralabs-apk`.
+7. فك الضغط وثبّت الـ APK على الموبايل.
 
-### على أندرويد (Chrome):
-- افتح الموقع
-- هتظهر رسالة "Add to Home Screen" أو من القائمة ← "تثبيت التطبيق" / "Add to Home screen"
+### ملاحظات
+- الـ APK اللي بيطلع Debug (مناسب للاختبار والتوزيع الخاص).
+- لو عايز APK موقع (Signed) لرفع على Google Play، قولي وأعدل الـ workflow.
 
-### على آيفون (Safari):
-- افتح الموقع
-- اضغط Share ← "Add to Home Screen"
-
-بعد التثبيت هيفتح زي أي أبلكيشن بدون شريط المتصفح.
-
-## ملاحظات مهمة
-- لوحة التحكم القديمة (`offers.php`) اتشالت لأن GitHub Pages مش بيدعم PHP.
-- عشان تضيف أو تحذف عروض جديدة: ارفع/احذف الصور من فولدر `offers/` على GitHub، وبعدين حدث الـ `index.html` (أو ابعتلي وأعدلها).
-- لو عايز دومين خاص (مثل sidralaboratory.com) تقدر تربطه من إعدادات GitHub Pages.
-
-## تحديث الصور لاحقاً
-لو ضفت صور جديدة في `offers/`، لازم تضيفها كمان جوا `index.html` في قسم العروض عشان تظهر.
+## الرابط
+https://github.com/dralaabadr/sidralabs
