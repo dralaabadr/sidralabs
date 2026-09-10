@@ -56,3 +56,717 @@ font-weight:800;cursor:pointer;background:#eee;margin:0 2px
 .lang-switch .active{background:var(--primary);color:#fff}
 
 /* ================= HERO ================= */
+.hero{
+min-height:90vh;background:url('cover.jpg') center/cover no-repeat;
+display:flex;align-items:center;justify-content:center;text-align:center;
+position:relative;color:#fff
+}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(rgba(13,71,161,.85),rgba(0,0,0,.6))}
+.hero-box{position:relative;max-width:900px}
+.iso-badge{
+position:absolute;top:20px;left:20px;
+background:#fff;color:#0d47a1;
+padding:8px 14px;border-radius:12px;font-weight:900;
+display:flex;align-items:center;gap:8px
+}
+.hero h1{font-size:3rem;font-weight:900;margin-bottom:15px}
+.hero h2{font-size:1.6rem;color:#ffeb3b;margin-bottom:20px}
+.hero-actions a{display:inline-block;margin:10px;padding:14px 30px;border-radius:40px;font-weight:900}
+.main-btn{background:#25d366;color:#fff}
+.sec-btn{background:#fff;color:#0d47a1}
+
+/* ================= EXPERIENCE ================= */
+.hero-experience{
+background:#f0f5ff;
+padding:50px 20px;
+display:flex;
+justify-content:center;
+}
+.exp-box{
+background:#fff;
+padding:28px 45px;
+border-radius:22px;
+box-shadow:0 12px 35px rgba(0,0,0,.08);
+font-size:24px;
+font-weight:900;
+color:#0d47a1;
+display:flex;
+align-items:center;
+gap:15px;
+}
+.exp-box i{font-size:34px;color:#1976d2}
+
+/* ================= TITLES ================= */
+.section-title{text-align:center;margin-bottom:60px}
+.section-title h2{font-size:2.5rem;color:var(--primary);font-weight:900}
+
+/* ================= GRIDS ================= */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+.card{
+background:#fff;padding:30px;border-radius:18px;
+box-shadow:var(--shadow);text-align:center;position:relative;z-index:2
+}
+.card i{font-size:2.8rem;color:var(--primary);margin-bottom:15px}
+
+/* ================= BRANCH ================= */
+.branch iframe{width:100%;height:260px;border:0;border-radius:14px}
+
+/* ================= CONTACT ================= */
+.contact{
+background:var(--gradient);color:#fff;text-align:center;
+padding:70px 6%;border-radius:40px
+}
+.contact a{color:#fff;font-weight:800;padding:12px 22px;border-radius:30px;background:rgba(255,255,255,.15);margin:5px;display:inline-block}
+
+/* ================= FOOTER ================= */
+footer{background:#050b2e;color:#fff;text-align:center;padding:35px}
+
+/* ================= FLOAT WA ================= */
+.float-wa{
+position:fixed;bottom:20px;right:20px;
+width:62px;height:62px;border-radius:50%;
+background:#25d366;color:#fff;font-size:34px;
+display:flex;align-items:center;justify-content:center;
+box-shadow:0 12px 30px rgba(0,0,0,.35);z-index:999
+}
+
+/* ================= OFFERS ================= */
+.offers-box{
+border:3px dashed #90caf9;
+border-radius:18px;
+padding:50px;text-align:center;color:#555
+}
+.hero-exp{
+font-size:2.0rem;
+font-weight:900;
+color:#ffeb3b;
+margin:15px 0 20px;
+text-shadow:0 3px 10px rgba(0,0,0,.4);
+letter-spacing:.5px;
+}/* =========================
+   ABOUT PRO (NO IMAGE)
+========================= */
+.about-pro {
+  background: linear-gradient(135deg,#f4f9ff,#ffffff);
+}
+
+.about-wrap.single {
+  max-width: 900px;
+  margin: auto;
+}
+
+.about-content {
+  background: #fff;
+  padding: 50px 45px;
+  border-radius: 24px;
+  box-shadow: 0 12px 35px rgba(0,0,0,.08);
+}
+
+/* النص */
+.about-text {
+  font-size: 19px;
+  line-height: 2;
+  color: #1f2d3d;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Mission */
+.about-mission {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: #f0f6ff;
+  padding: 16px 22px;
+  border-radius: 14px;
+  color: #0d47a1;
+  font-weight: 800;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-mission i {
+  font-size: 22px;
+  color: #2196f3;
+}
+
+/* Quote */
+.about-quote {
+  border-right: none;
+  padding-right: 0;
+  color: #0d47a1;
+  font-style: italic;
+  text-align: center;
+  font-size: 20px;      /* حجم الخط */
+  font-weight: 700;    /* تخانة الخط */
+  line-height: 1.8;    /* تباعد مريح */
+}
+
+/* OFFERS SLIDER */
+.offers-slider-box{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+margin-top:30px;
+}
+
+.offers-slider{
+display:flex;
+overflow:hidden;
+scroll-behavior:smooth;
+width:100%;
+max-width:1100px;
+}
+
+.offer-item{
+min-width:220px;   /* 👈 صغرنا الكرت */
+margin:0 10px;
+flex-shrink:0;
+}
+
+.offer-item img{
+width:100%;
+height:300px;      /* 👈 ارتفاع ثابت يخلي الشكل برو */
+object-fit:cover;
+border-radius:16px;
+box-shadow:0 10px 25px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+
+.offer-item img:hover{
+transform:scale(1.05);
+}
+
+.offer-arrow{
+background:#0d47a1;
+color:#fff;
+border:none;
+font-size:28px;
+width:55px;
+height:55px;
+border-radius:50%;
+cursor:pointer;
+box-shadow:0 6px 20px rgba(0,0,0,.25);
+transition:.3s;
+}
+
+.offer-arrow:hover{
+background:#1976d2;
+transform:scale(1.08);
+}
+
+.offer-arrow.right{margin-left:10px;}
+.offer-arrow.left{margin-right:10px;}
+
+@media(max-width:768px){
+.offer-item{min-width:240px;}
+}
+/* ================================= */
+/* 📱 SIDRA LABS – MOBILE OPTIMIZE */
+/* ================================= */
+
+@media (max-width: 768px){
+
+/* ===== General ===== */
+section{padding:60px 16px}
+.section-title h2{font-size:1.8rem}
+
+/* ===== Header ===== */
+header{
+flex-direction:column;
+gap:12px;
+padding:12px 12px;
+text-align:center
+}
+
+.logo{
+justify-content:center;
+font-size:1.2rem
+}
+
+nav ul{
+justify-content:center;
+gap:12px;
+font-size:14px
+}
+
+.social{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:6px
+}
+
+.lang-switch{margin-top:6px}
+
+/* ===== Hero ===== */
+.hero{
+min-height:auto;
+padding:90px 15px
+}
+
+.hero h1{font-size:2rem}
+.hero-exp{font-size:1.3rem}
+.hero h2{font-size:1.1rem}
+
+.hero-actions a{
+padding:12px 22px;
+font-size:15px;
+margin:6px
+}
+
+.iso-badge{
+top:10px;
+left:10px;
+font-size:13px;
+padding:6px 10px
+}
+
+/* ===== Experience ===== */
+.exp-box{
+flex-direction:column;
+font-size:18px;
+padding:22px;
+text-align:center
+}
+
+/* ===== Grids ===== */
+.grid{
+grid-template-columns:1fr;
+gap:18px
+}
+
+.card{
+padding:22px;
+font-size:15px
+}
+
+.card i{font-size:2.2rem}
+
+/* ===== About ===== */
+.about-content{
+padding:28px 20px
+}
+
+.about-text{
+font-size:16px;
+line-height:1.9
+}
+
+.about-mission{
+flex-direction:column;
+font-size:15px
+}
+
+.about-quote{
+font-size:16px
+}
+
+/* ===== Offers ===== */
+.offer-item{
+min-width:200px
+}
+
+.offer-item img{
+height:240px
+}
+
+.offer-arrow{
+width:42px;
+height:42px;
+font-size:20px
+}
+
+/* ===== Branches ===== */
+.branch iframe{
+height:220px
+}
+
+/* ===== Contact ===== */
+.contact{
+padding:45px 18px;
+border-radius:28px
+}
+
+.contact a{
+display:block;
+margin:10px auto;
+width:90%;
+font-size:16px
+}
+
+/* ===== Footer ===== */
+footer{
+font-size:14px;
+padding:28px 12px
+}
+
+/* ===== Floating WhatsApp ===== */
+.float-wa{
+width:54px;
+height:54px;
+font-size:28px;
+right:14px;
+bottom:14px
+}
+
+}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Sidra Labs",
+  "alternateName": "معامل سيدرا",
+  "url": "https://www.sidralaboratory.com/",
+  "logo": "https://www.sidralaboratory.com/logo.png",
+  "sameAs": [
+    "https://www.facebook.com/sidralaboratory/",
+    "https://www.youtube.com/@sidralabs"
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+<div class="logo"><img src="logo.png"> SIDRA LABS</div>
+
+<nav>
+<ul>
+<li><a href="#about" data-ar="من نحن" data-en="About">من نحن</a></li>
+<li><a href="#services" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+<li><a href="#offers" data-ar="العروض" data-en="Offers">العروض</a></li>
+<li><a href="#branches" data-ar="الفروع" data-en="Branches">الفروع</a></li>
+<li><a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a></li>
+</ul>
+</nav>
+
+<div class="social">
+<a class="fb" href="https://www.facebook.com/sidralaboratory/" target="_blank">Facebook</a>
+<a class="yt" href="https://www.youtube.com/@sidralabs" target="_blank">YouTube</a>
+<a class="wa" href="https://wa.me/201012992920" target="_blank">WhatsApp</a>
+</div>
+
+<div class="lang-switch">
+<button onclick="setLang('ar')" class="active" id="btn-ar">AR</button>
+<button onclick="setLang('en')" id="btn-en">EN</button>
+</div>
+</header>
+
+<section class="hero">
+<div class="iso-badge"><img src="iso.png" width="28"> ISO Certified</div>
+<div class="hero-box">
+<h1 style="line-height:1.6">
+
+<span style="display:block">
+معامل سيدرا للتحاليل الطبية في مصر
+</span>
+
+<span style="display:block;font-size:1.6rem;margin-top:10px;color:#ffeb3b">
+Sidra Labs
+</span>
+
+</h1>
+
+<p class="hero-exp"
+data-ar="خبرة أكثر من 15 عامًا في مجال التحاليل الطبية داخل مصر"
+data-en="More than 15 years of experience in medical laboratories in Egypt">
+خبرة أكثر من 15 عامًا في مجال التحاليل الطبية داخل مصر
+</p>
+<h2 data-ar="تحاليل دقيقة • سحب منزلي • تقارير إلكترونية سريعة" data-en="Accurate Tests • Home Collection • Fast Reports">تحاليل دقيقة • سحب منزلي • تقارير إلكترونية سريعة</h2>
+<div class="hero-actions">
+<a class="main-btn" href="https://wa.me/201012992920" data-ar="احجز سحب منزلي" data-en="Book Home Visit">احجز سحب منزلي</a>
+<a class="sec-btn" href="#branches" data-ar="اعرف أقرب فرع" data-en="Find Nearest Branch">اعرف أقرب فرع</a>
+</div>
+</div>
+
+</section>
+<section>
+<div style="max-width:900px;margin:40px auto;padding:35px 30px;
+background:#fff;border-radius:18px;
+box-shadow:0 12px 35px rgba(0,0,0,.1);
+text-align:center">
+
+<p style="font-size:18px;line-height:2;margin-bottom:20px;color:#333">
+<strong style="color:#0d47a1">Sidra Labs</strong> is a leading medical laboratory in Egypt providing accurate blood tests, 
+home sample collection, and fast electronic reports.
+</p>
+
+<hr style="margin:20px auto;width:70px;border:2px solid #1976d2;border-radius:10px">
+
+<p style="font-size:18px;line-height:2;direction:rtl;color:#333">
+<strong style="color:#0d47a1">معامل سيدرا</strong> من أفضل معامل التحاليل الطبية في مصر، 
+نقدم تحاليل دقيقة وسحب عينات من المنزل ونتائج سريعة.
+</p>
+
+</div>
+</section>
+<!-- WHY -->
+<section id="why">
+<div class="section-title"><h2 data-ar="لماذا تختار سيدرا؟" data-en="Why Choose Sidra?">لماذا تختار سيدرا؟</h2></div>
+<div class="grid">
+<div class="card"><i class="fas fa-certificate"></i><h3 data-ar="شهادة ISO معتمدة" data-en="ISO Certified">شهادة ISO معتمدة</h3></div>
+<div class="card"><i class="fas fa-bolt"></i><h3 data-ar="نتائج سريعة" data-en="Fast Results">نتائج سريعة</h3></div>
+<div class="card"><i class="fas fa-user-md"></i><h3 data-ar="أطباء متخصصون" data-en="Specialized Doctors">أطباء متخصصون</h3></div>
+<div class="card"><i class="fas fa-home"></i><h3 data-ar="سحب منزلي" data-en="Home Collection">سحب منزلي</h3></div>
+<div class="card"><i class="fas fa-shield-alt"></i><h3 data-ar="خصوصية تامة" data-en="Complete Privacy">خصوصية تامة</h3></div>
+<div class="card"><i class="fas fa-dollar-sign"></i><h3 data-ar="أسعار تنافسية" data-en="Best Prices">أسعار تنافسية</h3></div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-pro">
+  <div class="section-title">
+    <h2 data-ar="من نحن" data-en="About Sidra Labs">من نحن</h2>
+  </div>
+
+  <div class="about-wrap single">
+
+    <div class="about-content">
+      <p class="about-text"
+         data-ar="معامل سيدرا هي منظومة معامل تحاليل طبية متكاملة، تأسست لتقديم خدمات مخبرية دقيقة باستخدام أحدث الأجهزة العالمية وتحت إشراف نخبة من الأطباء المتخصصين. نحن لا نقدم مجرد تحليل… بل نقدم تشخيصًا موثوقًا يساعد الطبيب والمريض على اتخاذ القرار الصحيح."
+         data-en="Sidra Labs is an integrated medical laboratory system established to provide accurate laboratory services using the latest international equipment under the supervision of elite specialized doctors. We don’t just provide tests… we provide reliable diagnostics that help doctors and patients make the right medical decisions.">
+        معامل سيدرا هي منظومة معامل تحاليل طبية متكاملة، تأسست لتقديم خدمات مخبرية دقيقة باستخدام أحدث الأجهزة العالمية وتحت إشراف نخبة من الأطباء المتخصصين. نحن لا نقدم مجرد تحليل… بل نقدم تشخيصًا موثوقًا يساعد الطبيب والمريض على اتخاذ القرار الصحيح.
+      </p>
+
+      <!-- Mission -->
+      <div class="about-mission">
+        <i class="fas fa-bullseye"></i>
+        <span data-ar="مهمتنا: تقديم تحاليل دقيقة بمعايير عالمية لضمان قرارات طبية أكثر أمانًا."
+              data-en="Our mission: To deliver accurate laboratory diagnostics with global standards to ensure safer medical decisions.">
+          مهمتنا: تقديم تحاليل دقيقة بمعايير عالمية لضمان قرارات طبية أكثر أمانًا.
+        </span>
+      </div>
+
+      <!-- Quote -->
+      <div class="about-quote">
+        <i class="fas fa-quote-right"></i>
+        <p data-ar="في سيدرا… الدقة ليست ميزة، بل مسؤولية."
+           data-en="At Sidra… accuracy is not an advantage, it is a responsibility.">
+          في سيدرا… الدقة ليست ميزة، بل مسؤولية.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- MEDICAL -->
+<section id="medical">
+<div class="section-title"><h2 data-ar="الإشراف الطبي" data-en="Medical Supervision">الإشراف الطبي</h2></div>
+<div class="grid">
+<div class="card"><i class="fas fa-user-md"></i><h3>د/ ولاء عمران</h3><p>استشاري التحاليل الطبية<br>دكتوراه الكيمياء الحيوية والإكلينيكية <br>أخصائي مكافحة العدوى – وزارة الصحة</p></div>
+<div class="card"><i class="fas fa-user-md"></i><h3>د/ علاء عبدالمحسن</h3><p>استشاري التحاليل الطبية<br>ماجستير الكيمياء الحيوية<br>عضو الجمعية الأمريكية للتحاليل الطبية</p></div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<div class="section-title"><h2 data-ar="خدماتنا" data-en="Our Services">خدماتنا</h2></div>
+<div class="grid">
+<div class="card">تحاليل دم شاملة</div>
+<div class="card">تحاليل وظائف الكبد والكلى</div>
+<div class="card">تحاليل هرمونات وغدد</div>
+<div class="card">تحاليل أورام</div>
+<div class="card">تحاليل جينات</div>
+<div class="card">سحب عينات منزلي</div>
+</div>
+</section>
+
+<!-- OFFERS -->
+<section id="offers">
+  <div class="section-title">
+    <h2 data-ar="العروض" data-en="Offers">العروض</h2>
+  </div>
+
+  <div class="offers-slider-box">
+    <button class="offer-arrow right" onclick="slideOffers(-1)">❮</button>
+
+    <div class="offers-slider" id="offersSlider">
+    
+      <div class="offer-item">
+          <img src="offers/662811959_1272633735010345_4263444123735323503_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/665612188_1273489308258121_7032272596958249770_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/669787872_1277474061192979_7824381883422939045_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/683628123_1290800979860287_6927074088769735720_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/684699946_1291382039802181_6946610611071386168_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/685135212_1293262612947457_7905123196621322755_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/686941636_1297114139228971_5161007172689528720_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/689466367_1297099292563789_3646290242436843641_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/690677572_1295559689384416_8822048365883566245_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/690682922_1298759479064437_5638053152436692777_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/690932310_1299608648979520_8550760455993839933_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/696000735_1301263995480652_1975272136189128795_n.jpg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+      <div class="offer-item">
+          <img src="offers/WhatsApp Image 2026-06-10 at 15.06.17.jpeg" onclick="openZoom(this.src)" style="cursor:zoom-in;">
+      </div>
+
+    </div>
+
+    <button class="offer-arrow left" onclick="slideOffers(1)">❯</button>
+  </div>
+</section>
+
+
+
+
+<!-- BRANCHES -->
+<section id="branches">
+<div class="section-title"><h2 data-ar="فروعنا" data-en="Our Branches">فروعنا</h2></div>
+<div class="grid">
+<div class="card branch"><h3>الفرع الرئيسي – الشروق</h3><iframe src="https://www.google.com/maps?q=30.16128,31.54283&hl=ar&z=15&output=embed"></iframe></div>
+<div class="card branch"><h3>فرع المطرية</h3><iframe src="https://www.google.com/maps?q=30.1033,31.2891&hl=ar&z=15&output=embed"></iframe></div>
+<div class="card branch"><h3>فرع المعادي</h3><iframe src="https://www.google.com/maps?q=صقر+قريش+30+شارع+البحث+الجنائي+المعادي+القاهرة&hl=ar&z=15&output=embed"></iframe></div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<div class="contact">
+<h2 data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2><br>
+<a href="tel:01012992920">📞 01012992920</a>
+<a href="https://wa.me/201012992920">💬 واتساب</a>
+<a href="https://www.facebook.com/sidralaboratory/">📘 فيسبوك</a>
+<a href="https://www.youtube.com/@sidralabs">📺 يوتيوب</a>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Sidra Labs – جميع الحقوق محفوظة</p>
+</footer>
+
+<a class="float-wa" href="https://wa.me/201012992920"><i class="fab fa-whatsapp"></i></a>
+
+<script>
+const slider = document.getElementById("offersSlider");
+
+let autoScroll;
+
+function slideOffers(dir){
+  const scrollAmount = 260;
+
+  slider.scrollBy({
+    left: dir * scrollAmount,
+    behavior: "smooth"
+  });
+}
+
+function startAutoSlide(){
+
+  clearInterval(autoScroll);
+
+  autoScroll = setInterval(()=>{
+
+    const maxScrollLeft =
+      slider.scrollWidth - slider.clientWidth;
+
+    // لو وصل لآخر الصور يرجع للأول
+    if(slider.scrollLeft >= maxScrollLeft - 5){
+
+      slider.scrollTo({
+        left: 0,
+        behavior: "smooth"
+      });
+
+ 
+    }
+
+  },3000);
+
+}
+
+// يقف عند مرور الماوس
+slider.addEventListener("mouseenter",()=>{
+  clearInterval(autoScroll);
+});
+
+// يكمل بعد خروج الماوس
+slider.addEventListener("mouseleave",()=>{
+  startAutoSlide();
+});
+
+// تشغيل تلقائي
+startAutoSlide();
+</script>
+
+<script>
+function setLang(lang){
+  document.querySelectorAll("[data-ar]").forEach(el=>{
+    el.innerText = (lang === "ar") ? el.dataset.ar : el.dataset.en;
+  });
+
+  document.documentElement.lang = lang;
+  document.documentElement.dir  = (lang === "ar") ? "rtl" : "ltr";
+
+  document.getElementById("btn-ar").classList.remove("active");
+  document.getElementById("btn-en").classList.remove("active");
+  document.getElementById("btn-"+lang).classList.add("active");
+}
+</script>
+<!-- ZOOM MODAL -->
+<div id="imgZoomModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.9); z-index:9999; align-items:center; justify-content:center;">
+  
+  <span onclick="closeZoom()" 
+        style="position:absolute;top:20px;right:30px;font-size:40px;color:#fff;cursor:pointer;font-weight:900;">
+    &times;
+  </span>
+
+  <img id="zoomImg" src="" 
+       style="max-width:90%;max-height:90%;border-radius:16px;box-shadow:0 0 40px rgba(255,255,255,.2)">
+</div>
+<script>
+function openZoom(src){
+  document.getElementById("zoomImg").src = src;
+  document.getElementById("imgZoomModal").style.display = "flex";
+}
+
+function closeZoom(){
+  document.getElementById("imgZoomModal").style.display = "none";
+}
+</script>
+
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then(reg => console.log('Service Worker registered', reg.scope))
+      .catch(err => console.log('SW registration failed', err));
+  });
+}
+</script>
+
+</body>
+</html>
